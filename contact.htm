@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- 
+*********************************************************************
+Title: KCZ Photography Photo Contact Page
+Use: To allow users to browse through KCZ Photography's online website.
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: April 17, 2022
+Tested: April 30, 2022, Passed on Chrome and Microsoft Edge browsers. 
+*********************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Contact Me</title>
+        <meta name = "decription" content ="A photogrpahy page that allows users to fill a form to get in contact with me to book sessions.">
+        <meta name="keywords" content = "KCZ Photography, photography, contact, contact me, book now">
+        <!---adding in the viewport for responsive webpage design--->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <!---linking the slicknav menu--->
+        <link rel= "stylesheet" href = "SlickNav-master/dist/slicknav.css">
+        <link rel = "stylesheet" href = "SlickNav-master/dist/slicknav.min.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.min.js"></script>
+        <script type= "text/javascript">
+                $(document).ready(function()
+        {$('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+                });
+                </script>
+        <!---linking the stylesheet--->
+        <link rel = "stylesheet" href = "stylesheet.css">
+    
+        <!---Linking font-awsome icon css --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body id = "contact">
+    
+    <h1> KCZ Photography </h1>
+    <!---adding navigation menu 5b.--->
+        <nav id ="mobile_menu"></nav>
+        <nav id = "nav_menu">
+            <ul>
+                <li id = "nav"><a href="index.htm"> Home </a></li>
+                <li id = "nav"><a href="about.htm"> About Me </a></li>
+                <li id = "nav"><a href="rates.htm"> Rates </a></li>
+                <li id = "nav"><a href="gallery.htm"> Photo Gallery </a></li>
+                <li id = "nav"><a href="contact.htm"> Contact Me </a></li>
+            </ul>
+        </nav>
+    
+    <p class = "description"> Your future photography session is awaiting!<br> Let me remind you that we are about to make those special moments last a lifetime. <br>Please fill out the form below so I can get to know you a little more! </p>
+    
+    
+    <img class = "contactphoto" src = "img/contact.jpg">
+    
+     <!--- Form on contact page --->
+    <div id = "formlayout">
+        <form>
+            <label for = "firstname">First Name: </label><br>
+                <input required autofocus type = "text" id = "firstname" minlength = "1" placeholder= "First Name?"><br><br>
+            <label for = "lastname"> Last Name: </label><br>
+                <input required autofocus type = "text" id = "lastname" minlength = "1" placeholder= "Last Name?"><br><br>
+            <label for = "emailaddress">Email Address:</label><br>
+                <input required type= "email" id = "emailaddress" minlength = "5" placeholder="Email Address?"><br><br>
+            <label for = "phonenumber">Phone Number:</label><br>
+                <input required type= "tel" id = "phonenumber" minlength = "10" maxlength="25" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="999-999-9999"><br><br>
+            <label for = "location"> Your Location:</label><br>
+                <input required type= "text" id = "location" minlength = "4"  placeholder = "Where are you from?">
+            
+            <fieldset>
+                    <legend><br><br>Session Type:</legend><br>
+                        <input type= "radio" name = "1" value = "Wedding"> Wedding<br>
+                        <input type= "radio" name = "2" value = "Maternity"> Maternity<br>
+                        <input type= "radio" name = "3" value = "Engagement"> Engagement<br>
+                        <input type= "radio" name = "4" value = "Family"> Family <br>
+                        <input type= "radio" name = "4" value = "Athletics"> Athletics <br>
+                        <input type= "radio" name = "4" value = "Senior"> Senior <br>
+                        <input type= "radio" name = "4" value = "Couples"> Couples <br>
+                        <input type= "radio" name = "4" value = "Professional"> Professional <br>
+                        <input type= "radio" name = "4" value = "Graduation"> Graduation <br>
+                        <input type= "radio" name = "4" value = "Newborn"> Newborn <br>
+            </fieldset><br>
+            <label for = "message"> Message:</label><br>
+                <input required type = "textarea" id = "textarea" minlength = "20" maxlength="200"  placeholder="Leave comments or questions here!">
+
+        </form>
+    </div>
+    
+        
+   <!--- Buttons for "Book Now" --->
+            
+    <button class = "submit"onclick= "document.location.href= 'response.htm';"> Submit </button><br><br>
+    
+    <div id = "socialmedia">
+        <a href = "https://www.facebook.com/" class = "fa fa-facebook"> <br>facebook </a>
+        <a href = "https://www.instagram.com/accounts/login/" class = "fa fa-instagram"> <br> instagram </a>
+        <a href = "https://twitter.com/login" class = "fa fa-twitter"> <br> twitter </a>
+        <a href = "https://www.pinterest.com/login/" class = "fa fa-pinterest"> <br> pinterest </a>
+    </div>
+    
+    <p id = "disclaimer"> CUSTOMER NOTICE: This is a fictitious website and I do not own any of these images. </p>
+        
+</body>
+</html>

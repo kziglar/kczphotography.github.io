@@ -1,0 +1,627 @@
+/*
+*********************************************************************
+Title: KCZ Photography - CSS Page
+Use: Style Sheet for KCZ Photography
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: April 17, 2022
+Tested: April 30, 2022: Passed on Chrome and Microsoft Edge browsers. 
+*********************************************************************
+*/
+
+html
+{
+    margin 10px;
+    color:rgb(74, 74, 74);
+    background-color:rgb(215, 221, 212);
+}
+
+
+/* Home Page formatting*/
+
+.photoheader
+{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.homephotos
+{
+    width: 45%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Inlcuded at bottom of every page*/
+#disclaimer
+{
+    font-size: 80%;
+    text-align: center;
+}
+/* Added rounded corners for CSS3 effect 5.(1)*/
+.booknow
+{
+    padding: .25em;
+    margin-top: 20px;
+    display: block;
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 30px;
+    background-color:white;
+    color: rgb(147, 71, 44);
+    border-color: rgb(202, 196, 180);
+    border-radius: 15px;
+}
+
+#socialmedia 
+{
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 180%;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+#socialmedia a 
+{
+    
+    text-align: center;
+    display: inline-block;
+    color: rgb(147, 71, 44);
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/* KCZ Photography title used on all pages*/
+h1
+{
+    font-size:500%;
+    text-align: center;
+    border: dotted 10px white;
+    border-radius: 20px;
+}
+
+.description
+{
+    text-align: center;
+    font-size: 200%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+
+/* Navigation Menu Bar */
+#nav_menu ul 
+{
+    text-align: center;
+    background-color:rgb(250, 250, 250);
+    border-radius: 15px;
+    padding: 10px;
+}
+    
+#nav_menu ul li 
+{
+    display:inline-flex;
+    padding-right:20px;
+    padding-left:20px; 
+}
+
+#nav_menu ul li a
+{   text-align: center;
+    display: block;
+    width: 175  px;
+    padding: .25em;
+    padding-right: 10px;
+    text-decoration: none;
+    background-color:rgb(237, 229, 222);
+    color: rgb(147, 71, 44);
+    border-radius: 15px;  
+}
+
+#nav
+{   padding-left: 10px;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+
+
+/* Photo Gallery Page and Image Formatting */
+
+/* Formatting for whole gallery */
+div.imggallery
+{
+    width: 80%;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: dotted 6px white;
+}
+
+/* Formatting for images in the gallery */
+.gallery
+{
+    flex-wrap: wrap;
+    width:22%;
+    height: auto;
+    margin: auto;
+}
+h3
+{
+    font-size: 200%;
+    text-align: center;
+}
+
+
+/* ABOUT ME page */
+
+/* Uses the .photoheader*/
+.personal
+{
+    display: inline-block;
+    width: 18%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-top: 2%;
+    border: dotted 10px rgb(100, 110, 94);
+}
+
+.flowers_1
+{
+    float: left;
+    display: inline-block;
+    width: 28%;
+    height: auto;
+    margin-top: 6%;
+    margin-left: 12%;
+}
+.flowers_2
+{
+    float: right;
+    display: inline-block;
+    width: 28%;
+    height: auto;
+    margin-top: 6%;
+    margin-right: 12%;
+}
+
+figcaption
+{
+    font-size: 300%;
+    display: block;
+    font-weight: bold;
+    padding-top: 1em;
+    text-align: center;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.personal_description
+{
+    font-size: 180%;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    border-radius: 20px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+
+}
+.about_title 
+{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 40px;
+    color:rgb(147, 71, 44);
+    font-weight: bold;
+}
+
+.facts
+{
+    width: 65%;
+    margin-right:auto;
+    margin-left: auto;
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 20px;
+    font-size: 180%;
+    text-align: left;
+    list-style: inside;
+    list-style-type:circle;
+    column-count: 2;
+    font-weight: bold;
+}
+
+.journey
+{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 180%;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* CONTACT ME Page Layout + Form */
+.contactphoto
+{
+    width: 40%;
+    height: 150%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-right: 5%;
+   
+    float: right;
+}
+
+#formlayout
+{
+    width: 50%;
+    float: left;
+    margin-right: auto;
+    margin-left: 5%;
+    display: block;
+    font-size: 200%;
+}
+
+label
+{
+    width: 60%;
+    text-align: center;
+    font-weight: bold; 
+    display: block;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+}
+
+input
+{
+    width: 60%;
+    float: left;
+    font-size: 80%;
+    padding: .5em;
+    display: block;
+    line-height: 1;
+    text-align: center;
+}
+
+legend
+{
+    width: 60%;
+    text-align: center;
+    font-weight: bold; 
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+fieldset
+{  
+    width: 60%;
+    line-height: 1;
+    text-align: left;
+}
+
+#textarea
+{
+    height: 10em;
+    width: 60%;
+    text-align: center;
+    font-size: 80%;
+    margin-bottom: 10%;
+}
+
+.submit
+{
+    padding: .25em;
+    font-size: 30px;
+    background-color:white;
+    color: rgb(147, 71, 44);
+    border-color: rgb(202, 196, 180);
+    border-radius: 15px;
+}
+
+
+/* RATES Page Layout */
+
+.rates_title
+{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 300%;
+    color:rgb(147, 71, 44);
+    font-weight: bold;
+    background-color: rgb(250, 250, 250);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.wedding_session
+{
+    width: 60%;
+}
+
+.other_session
+{
+    width: 60%;
+}
+.types
+{
+    width: 90%;
+    margin-right:auto;
+    margin-left: auto;
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 20px;
+    font-size: 180%;
+    text-align: left;
+    list-style: inside;
+    list-style-type:circle;
+    column-count: 5;
+    font-weight: bold;
+}
+
+li
+{
+    padding-left: 10%;
+}
+
+table
+{ 
+    border: dotted 10px white; 
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.columns th
+{
+    font-size: 200%;
+    padding-top: 5%;
+    text-decoration: underline;
+}
+
+td
+{   
+    font-size: 180%;
+    padding: 1em;
+    text-align: center;
+    font-style: italic;
+}
+
+.rates_left
+{
+    float: left;
+    width: 17%;
+    height: auto;
+    padding-left: 1%;
+    margin: auto;
+    padding-top: 6%;
+}
+.rates_right
+{
+    float: right;
+    width: 17%;
+    height: auto;
+    padding-left: 1%;
+    margin: auto;
+    padding-top: 6%; 
+}
+
+
+/* Responsive Page Layout */
+
+/* SMALL*/
+@media only screen and (max-width: 767px)
+{
+    
+    h1              {font-size: 3em;}
+    .description    {font-size: 1.5em}
+    disclaimer      {font-size: 1em;}
+    h3              {font-size: 1.5em;}
+    
+    #nav_menu       {display:none;}
+       
+    .slicknav_menu 
+    {   display:flex;
+        background-color: white;
+        font-family: bold;
+        font-size: 1em;
+    }
+    
+    #mobile_menu li a 
+    {
+        font-size: .75em;
+        color: rgb(147, 71, 44);
+    }
+    
+    div.imggallery
+    {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap; 
+        padding: 1em;
+        display: flex; 
+    }
+    
+    .gallery
+    {
+        padding: 1em;
+        flex-wrap: wrap;
+        width: 30%;
+        margin: auto;
+    }
+    
+    .photoheader
+    {
+        width: 100%;
+        text-align: center;
+        display: flex; 
+    }
+    .personal
+    {
+        width: 28%;
+        height: auto;
+    }
+    
+    #socialmedia
+    {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 80%;
+        display: inline;
+    }
+    
+    .booknow, .submit
+    {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 20px;
+        width: 120px;
+    }
+    .flowers_1, .flowers_2
+    {
+        display: flex;
+        margin:auto;
+        
+    }
+    .personal_description, .journey, .about_title
+    {
+        font-size:100%;
+    }
+    .facts
+    {
+        width: 90%;
+        font-size: 85%;
+        display: block;
+        padding: 1em;
+    }
+
+    figcaption
+    {
+        font-size:130%;
+    }
+    .types
+    {
+        font-size: 90%;
+        display: block;
+    }
+    .rates_title
+    {
+        font-size: 150%;
+        
+    }
+    .wedding_session, .other_session
+    {
+        display: block;
+    }
+    .columns th
+    {
+        font-size: 100%;
+    }
+    td
+    {
+        font-size:90%;
+        padding:.5em;
+    }
+    #formlayout
+    {
+        font-size: 100%;
+        display: block;
+    }
+    input, #textarea
+    {
+        display: inline-block;
+        font-size: 50%;
+
+    }
+    fieldset input
+    {
+        font-size: 50%;
+        width: 20%;
+    }
+    
+    
+}
+
+/* LARGE */
+@media only screen and (min-width: 768px)
+{
+    #nav_menu       {display:block;}
+    
+    #mobile_menu    {display: none;}
+    
+    .slicknav_menu  {display: none;}
+    
+    div.imggallery
+    {
+        width: 100%;
+        flex-wrap: wrap; 
+        padding: 2em;
+        display: flex;
+    }
+    
+    .gallery
+    {
+        padding: 1em;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    
+    .photoheader
+    {
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
+    
+    #socialmedia 
+    {
+        margin-left:auto;
+        margin-right: auto;
+        font-size: 180%;
+        display: inline-block;
+    }
+    
+    .booknow, .submit
+    {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 30px;
+        width: 180px;
+        
+    }
+    .flowers_1, .flowers_2
+    {
+        display: flex;
+    }
+    
+    table
+    {
+        display: block;
+    
+    }
+    
+    
+}

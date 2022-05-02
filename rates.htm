@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- 
+*********************************************************************
+Title: KCZ Photography Rates Page
+Use: To allow users to view pricing, hourly rates, and number of photos per session. 
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: April 17, 2022
+Tested: April 30, 2022, Passed on Chrome and Microsoft Edge browsers. 
+*********************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Rates</title>
+        <meta name = "decription" content ="A photogrpahy rate page that allows users to view my prices by hour and number of photos.">
+        <meta name="keywords" content = "KCZ Photography, photography, rates">
+        <!---adding in the viewport for responsive webpage design--->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <!---linking the slicknav menu--->
+        <link rel= "stylesheet" href = "SlickNav-master/dist/slicknav.css">
+        <link rel = "stylesheet" href = "SlickNav-master/dist/slicknav.min.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.min.js"></script>
+        <script type= "text/javascript">
+                $(document).ready(function()
+        {$('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+                });
+                </script>
+        <!---linking the stylesheet--->
+        <link rel = "stylesheet" href = "stylesheet.css">
+    
+        <!---Linking font-awsome icon css --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body id = "rates">
+    <!---adding navigation menu 5b.--->
+        <nav id ="mobile_menu"></nav>
+        <nav id = "nav_menu">
+            <ul>
+                <li id = "nav"><a href="index.htm"> Home </a></li>
+                <li id = "nav"><a href="about.htm"> About Me </a></li>
+                <li id = "nav"><a href="rates.htm"> Rates </a></li>
+                <li id = "nav"><a href="gallery.htm"> Photo Gallery </a></li>
+                <li id = "nav"><a href="contact.htm"> Contact Me </a></li>
+            </ul>
+        </nav>
+        <h1> KCZ Photography </h1>
+        
+       
+            <ul class = "types">
+                <li> wedding</li>
+                <li> maternity</li>
+                <li> engagement</li>
+                <li> family</li>
+                <li> athletics</li>
+                <li> senior</li>
+                <li> couples</li>
+                <li> professional</li>
+                <li> graduation</li>
+                <li> newborn</li>
+                
+            </ul>   
+        
+            <img class = "rates_left" src = "img/rateswedding1.jpg">
+            <img class = "rates_right" src = "img/rateswedding2.jpg">
+            
+            <table class = "wedding_session">
+                <thead>
+                    <tr>
+                        <th class = "rates_title" colspan = "3"> Wedding Sessions</th>
+                    </tr>
+                    <tr class = "columns">
+                        <th> Duration</th>
+                        <th> Number of Photos</th>
+                        <th> Price </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 4 hour coverage</td>
+                        <td> 300 edited images</td>
+                        <td> $1,400</td>
+                    </tr>
+                    <tr>
+                        <td> 8 hour coverage</td>
+                        <td> 600 edited images</td>
+                        <td> $2,400</td>
+                    </tr>
+                    <tr>
+                        <td> 12 hour coverage</td>
+                        <td> 1,000 edited images</td>
+                        <td> $3,400</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+    
+            <img class = "rates_left" src = "img/ratesother1.jpg">
+            <img class = "rates_right" src = "img/ratesother2.jpg">
+    
+            <table class = "other_session">
+                <thead>
+                    <tr>
+                        <th class = "rates_title" colspan = "3"> Other Sessions</th>
+                    </tr><br>
+                    <tr class = "columns">
+                        <th> Duration</th>
+                        <th> Number of Photos</th>
+                        <th> Price </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 hour</td>
+                        <td> 50 edited images</td>
+                        <td> $300</td>
+                    </tr>
+                    <tr>
+                        <td> 2 hours </td>
+                        <td> 70 edited images</td>
+                        <td> $400</td>
+                    </tr>
+                    <tr>
+                        <td> 3 hours </td>
+                        <td> 100 edited images</td>
+                        <td> $500</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+           
+    
+    <!--- Buttons for "Book Now" --->
+            <button class = "booknow"onclick= "document.location.href= 'contact.htm';"> Book Now </button>
+    
+    <div id = "socialmedia">
+        <a href = "https://www.facebook.com/" class = "fa fa-facebook"> <br>facebook </a>
+        <a href = "https://www.instagram.com/accounts/login/" class = "fa fa-instagram"> <br> instagram </a>
+        <a href = "https://twitter.com/login" class = "fa fa-twitter"> <br> twitter </a>
+        <a href = "https://www.pinterest.com/login/" class = "fa fa-pinterest"> <br> pinterest </a>
+    </div>
+    
+    <p id = "disclaimer"> CUSTOMER NOTICE: This is a fictitious website and I do not own any of these images. </p> 
+
+</body>
+</html>
