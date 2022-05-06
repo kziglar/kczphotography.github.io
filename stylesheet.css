@@ -11,7 +11,7 @@ Tested: April 30, 2022: Passed on Chrome and Microsoft Edge browsers.
 
 html
 {
-    margin 10px;
+    margin: 10px;
     color:rgb(74, 74, 74);
     background-color:rgb(215, 221, 212);
 }
@@ -105,6 +105,8 @@ h1
     background-color:rgb(250, 250, 250);
     border-radius: 15px;
     padding: 10px;
+    font-size: 30px;
+    
 }
     
 #nav_menu ul li 
@@ -125,13 +127,6 @@ h1
     color: rgb(147, 71, 44);
     border-radius: 15px;  
 }
-
-#nav
-{   padding-left: 10px;
-    font-size: 30px;
-    padding-right: 10px;
-}
-
 
 
 /* Photo Gallery Page and Image Formatting */
