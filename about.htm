@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- 
+*********************************************************************
+Title: KCZ Photography About Me Page
+Use: To allow users to browse through KCZ Photography's online website.
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: April 17, 2022
+Tested: May 4, 2022, Passed on Chrome and Microsoft Edge browsers. 
+*********************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>About Me</title>
+        <meta name = "decription" content ="A photogrpahy page that allows users to get to know more about me.">
+        <meta name="keywords" content = "KCZ Photography, photography, about me">
+        <!---adding in the viewport for responsive webpage design--->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <!---linking the slicknav menu--->
+        <link rel= "stylesheet" href = "SlickNav-master/dist/slicknav.css">
+        <link rel = "stylesheet" href = "SlickNav-master/dist/slicknav.min.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.min.js"></script>
+        <script type= "text/javascript">
+                $(document).ready(function()
+        {$('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+                });
+                </script>
+        <!---linking the stylesheet--->
+        <link rel = "stylesheet" href = "stylesheet.css">
+    
+        <!---Linking font-awsome icon css --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
+<!--- Use of id and class selectors c(3) --->
+</head>
+<body id = "about">
+    <!---adding navigation menu 5b.--->
+        <nav id ="mobile_menu"></nav>
+        <nav id = "nav_menu">
+             <ul id = "nav">
+                <li> <a href="index.htm"> Home </a></li>
+                <li> <a href="about.htm"> About Me </a></li>
+                <li> <a href="rates.htm"> Rates </a></li>
+                <li> <a href="gallery.htm"> Photo Gallery </a></li>
+                <li> <a href="contact.htm"> Contact Me </a></li>
+            </ul>
+        </nav>
+    
+    <div class = "photoheader">
+        <img alt = '' class = "flowers_1" src = "img/flowers">
+        <img alt = '' class = "personal" src = "img/personal.jpg">
+        <img alt = '' class = "flowers_2" src = "img/flowers2.png">
+    
+    </div>
+    
+    
+    <br><br><p class = "caption"> Hi there!</p>
+    
+    <p class = "personal_description">My name is Kaleigh Ziglar. I am a self-taught photographer who loves capturing every moment possible. I am from a small town in Southern Illinois that you have probably never even heard of - Mount Olive. I grew up here and then decided to get my bachelor's degree online for information technology. Although I have always knew I would so something in a technology-based field, I knew in the back of my mind I woudld not commit to only one thing. Photography is my "second-job" even though I find it more of a hobby and passion for art.  </p>
+    
+    
+   <!--- Contain at least one unordered list 5.f --->
+        <p class = "about_title"> A little bit about me... </p>
+        <ul class = "facts">
+                <li> outdoor concert lover </li>
+                <li> pittie momma of two </li>
+                <li> lives for Taco Tuesday</li>
+                <li> nature lover & adventure seeker </li>
+                <li> iced-coffee-holic </li>
+                <li> home-project & DIY enthusiast</li>
+                
+            </ul>
+    
+        <p class = "about_title"> My photography journey</p>
+        
+        
+        <p class = "journey">I have always had a love for photography. Not just the art of a photo, but more so the meaning and impact they serve. Photos give back life to the moments we truly don't ever want to forget. One look at it and it brings back the emotion, joy, and love that was there when the photo was taken. It is the only way we can really freeze time just for a second to remember it forever. I fell in love with the art of taking photos more recently. I bought my first camera in 2020 where I mostly took photos of nature. Hence the "nature-loving". Since then, I have explored all different kinds of photography and have completely fallen in love. I now do all styles of photography but I love to incorporate the beauty of nature when and wherever I can. Let me share my passion for art and photography with you! I promise I will do everything in my power to make sure you have a memorable experience so your raw happiness shines through in those photos! Now that you know some about me, I would like to get to know you!</p>
+    
+    <!--- Buttons for "Book Now" --->
+            <button class = "booknow" onclick= "document.location.href= 'contact.htm';"> Book Now </button>
+    
+    <div id = "socialmedia">
+        <a href = "https://www.facebook.com/" class = "fa fa-facebook"> <br>facebook </a>
+        <a href = "https://www.instagram.com/accounts/login/" class = "fa fa-instagram"> <br> instagram </a>
+        <a href = "https://twitter.com/login" class = "fa fa-twitter"> <br> twitter </a>
+        <a href = "https://www.pinterest.com/login/" class = "fa fa-pinterest"> <br> pinterest </a>
+    </div>
+    
+    <p id = "disclaimer"> CUSTOMER NOTICE: This is a fictitious website and I do not own any of these images. </p> 
+   
+    
+    
+
+</body>
+</html>
